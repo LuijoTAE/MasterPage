@@ -55,18 +55,15 @@ body {
 /* FOOTER */
 
 .footer {
-    height: auto;
-
-    background-color: #17252A;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
     position: relative;
+    height: auto;
+    width: 100%;
+    background-color: #17252A;
 }
 
 .footer .container {
     width: 90%;
-    height: 30px;
+    height: 50px;
 
     margin: 0 auto;
     padding: 5px 10px 10px 10px;

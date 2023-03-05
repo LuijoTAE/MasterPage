@@ -1,0 +1,74 @@
+﻿
+#formLogin {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width:50%;
+}
+
+.label {
+    display: block;
+    font-family: "Ralewey", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.textbox {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin: 0 0 20px 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #999999;
+}
+
+.bottom {
+    background-color: #3AAFA9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login {
+    height:  calc(100vh - 160px );
+    position: relative;
+
+    display:flex;
+    justify-content:center;
+}
+
+.login .container_campos{
+    padding:10px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.login .container_titulo{
+    padding:10px 10px 0 10px;
+    display:flex;
+    justify-content:center;
+    
+}
+
+    .login .container_titulo .subtitle {
+        padding: 10px 10px 0 10px;
+        border: 1px solid white;
+        color: #17252A;
+    }
+
+.bottom:hover {
+    transform: scale(1.05);
+    background-color: #2B7A78;
+    animation-duration: 1s;
+    /*transition: 2s;*/
+}
