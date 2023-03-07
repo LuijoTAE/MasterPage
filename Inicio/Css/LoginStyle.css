@@ -1,8 +1,54 @@
-﻿
+﻿@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ralewey", sans-serif;
+}
+
+.header {
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #17252A;
+}
+
+.login {
+    height: calc(100vh - 160px );
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.login .container_campos{
+    padding:10px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.login .container_titulo{
+    padding:10px 10px 0 10px;
+    display:flex;
+    justify-content:center;
+    
+}
+
+.login .container_titulo .subtitle {
+    padding: 10px 10px 0 10px;
+    border: 1px solid white;
+    color: #17252A;
+}
+
+
 #formLogin {
     position: relative;
     background-color: #fff;
     padding: 20px;
+    margin-top:20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width:50%;
@@ -27,44 +73,30 @@
 }
 
 .bottom {
+    display: block;
+    width: 100%;
+    margin-left:10px;
+    padding:10px 20px;
     background-color: #3AAFA9;
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
 }
 
-.login {
-    height:  calc(100vh - 160px );
-    position: relative;
 
-    display:flex;
-    justify-content:center;
+.footer {
+    position:fixed;
+    display:block;
+    bottom:0px;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #17252A;
 }
 
-.login .container_campos{
-    padding:10px;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-}
-
-.login .container_titulo{
-    padding:10px 10px 0 10px;
-    display:flex;
-    justify-content:center;
-    
-}
-
-    .login .container_titulo .subtitle {
-        padding: 10px 10px 0 10px;
-        border: 1px solid white;
-        color: #17252A;
-    }
 
 .bottom:hover {
     transform: scale(1.05);

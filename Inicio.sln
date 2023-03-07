@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inicio", "Inicio\Inicio.csproj", "{3940B280-A55F-4F7F-BAB0-1F92C6ADD7FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAPA_LOGICA", "CAPA_LOGICA\CAPA_LOGICA.csproj", "{AAFA5106-5C2E-4426-873C-36A1FB4B8982}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3940B280-A55F-4F7F-BAB0-1F92C6ADD7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3940B280-A55F-4F7F-BAB0-1F92C6ADD7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3940B280-A55F-4F7F-BAB0-1F92C6ADD7FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAFA5106-5C2E-4426-873C-36A1FB4B8982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAFA5106-5C2E-4426-873C-36A1FB4B8982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAFA5106-5C2E-4426-873C-36A1FB4B8982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAFA5106-5C2E-4426-873C-36A1FB4B8982}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

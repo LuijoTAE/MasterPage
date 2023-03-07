@@ -74,3 +74,5 @@ D:\C#\Inicio\Inicio\obj\Debug\Inicio.csproj.CoreCompileInputs.cache
 D:\C#\Inicio\Inicio\obj\Debug\Inicio.csproj.CopyComplete
 D:\C#\Inicio\Inicio\obj\Debug\Inicio.dll
 D:\C#\Inicio\Inicio\obj\Debug\Inicio.pdb
+D:\C#\Inicio\Inicio\bin\CAPA_LOGICA.dll
+D:\C#\Inicio\Inicio\bin\CAPA_LOGICA.pdb

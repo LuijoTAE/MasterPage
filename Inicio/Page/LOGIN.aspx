@@ -1,35 +1,42 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/Masterpage.Master" AutoEventWireup="true" CodeBehind="LOGIN.aspx.cs" Inherits="Inicio.Page.LOGIN" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" href="../Css/LoginStyle.css"/>
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="login">
-        <form id="formLogin" runat="server">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LOGIN.aspx.cs" Inherits="Inicio.Page.LOGIN" %>
 
-            <div class="container_titulo">
-                <h2 class="subtitle">
-                    LOGING
-                </h2>
-            </div>
-            <div class="container_campos">
+<!DOCTYPE html>
 
-                <label class="label">
-                    Nombre de usuario:
-                </label>
-                <input id="txtUser" class="textbox" type="text" name="username" required="required" runat="server">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../Css/LoginStyle.css" />
+</head>
+<body>
+    <header class="header">
 
-                <label class="label">
-                    Contraseña:
-                </label>
-                <input id="txtPassword" class="textbox" type="password" name="password" required="required" runat="server">
+    </header>
+    <main class="main">
+        <div class="login">
+            <form id="formLogin" runat="server">
 
-                <button id="btnIniciar"  class="bottom" type="submit"  onclick="BtnIniciar" runat="server">
-                    Iniciar sesión
-                </button>
+                <div class="container_titulo">
+                    <h2 class="subtitle">LOGING
+                    </h2>
+                </div>
+                <div class="container_campos">
+                    <asp:Label ID="Label1" CssClass="label" runat="server">
+                    Nombre de usuario:</asp:Label>
+                    <asp:TextBox ID="txtNameUser" CssClass="textbox" runat="server"></asp:TextBox>
 
-                <script src="../JavaScrip/JavaScript.js"></script>
-            </div>
-        </form>
-    </div>
-    
-</asp:Content>
+                    <asp:Label ID="Label2" CssClass="label" runat="server">
+                    Contraseña:</asp:Label>
+                    <asp:TextBox ID="txtPasword" CssClass="textbox" TextMode="Password" runat="server"></asp:TextBox>
+
+                    <asp:Button ID="btnIniciarSesion" CssClass="bottom" runat="server"
+                        Text="Iniciar sesión" OnClick="btnIniciarSesion_Click" />
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+</body>
+</html>
