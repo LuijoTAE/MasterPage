@@ -51,7 +51,6 @@ D:\C#\Inicio\Inicio\bin\roslyn\vbc.rsp
 D:\C#\Inicio\Inicio\bin\roslyn\VBCSCompiler.exe
 D:\C#\Inicio\Inicio\bin\roslyn\VBCSCompiler.exe.config
 D:\C#\Inicio\Inicio\bin\Antlr3.Runtime.dll
-D:\C#\Inicio\Inicio\bin\AspNet.ScriptManager.bootstrap.dll
 D:\C#\Inicio\Inicio\bin\AspNet.ScriptManager.jQuery.dll
 D:\C#\Inicio\Inicio\bin\Microsoft.AspNet.FriendlyUrls.dll
 D:\C#\Inicio\Inicio\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll

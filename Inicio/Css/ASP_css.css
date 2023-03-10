@@ -1,0 +1,60 @@
+﻿body {
+}
+
+.asp {
+    padding-top: 70px;
+    background-color: #ECF2FF;
+}
+
+.asp .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.asp figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.asp figure{
+    display:flex;
+    justify-content:center;
+}
+
+.asp .section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+asp .section .content {
+     margin: 10px;
+}
+
+.asp .subtitle {
+    color: #655DBB;
+}
+
+.asp .container_T{
+    padding:20px;
+    display:flex;
+    justify-content:center;
+}
+
+
+@media screen and (max-width: 800px) {
+    .asp .section{
+        grid-template-columns: 1fr;
+        grid-template-rows:auto;
+    }
+    .asp .article{
+        grid-row: 2/1;
+    }
+}

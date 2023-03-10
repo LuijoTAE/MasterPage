@@ -1,0 +1,48 @@
+﻿@import url('mcss.css');
+body {
+    
+}
+
+
+
+.nav_ {
+    background-color: #3E54AC;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: end;
+    min-height: 60px;
+}
+
+.link_{
+    padding: 5px 10px;
+    text-decoration:none;
+    color:white;
+    font-size:15px;
+    font-weight:400;
+    cursor:pointer;
+}
+
+.link_-I{
+    border:1px solid white;
+    font-weight:500;
+}
+
+.link_:hover{
+    transform: scale(1.05);
+    border-bottom: 1px solid white;
+}
+
+.link_-I:hover {
+    background-color: #655DBB;
+}
+
+@media screen and (max-width: 800px){
+    .nav_{
+        justify-content: space-around;
+    }
+}

@@ -1,10 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/Masterpage.Master" AutoEventWireup="true" CodeBehind="ASP.aspx.cs" Inherits="Inicio.Page.Registrar" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" href="../Css/aspStyle.css" type="text/css"/>
+    <link rel="stylesheet" href="../Css/ASP_css.css" type="text/css"/>
+    <link rel="stylesheet" href="../Css/Mcss.css"/>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="asp">
+        <div class="container_T">
+            <h1>Introducción a ASP.NET</h1>
+        </div>
+        <br />
     <div class="container">
 
         <section class="section">
@@ -17,9 +22,15 @@
                          diferentes de aplicaciones.
                 </p>
             </article>
+            <figure>
+                <img src="https://dotnet.microsoft.com/static/images/illustrations/swimlane-dotnet-core.svg?v=GpYFhrIiKcQ4iD8CvY7U0WpwZT7FkTZsMOhWtclnQ8o"/>
+            </figure>
         </section>
 
         <section class="section">
+             <figure>
+                <img src="https://dotnet.microsoft.com/static/images/illustrations/swimlane-aspnet-extends-dotnet.svg"/>
+            </figure>
             <article class="article concepto">
                 <h3 class="subtitle">Introducción a .NET Framework
                 </h3>
@@ -35,6 +46,9 @@
         </section>
         
         <section class="section">
+
+            
+
             <article class="article arquitectura">
                 <div class="text">
                     <h3 class="subtitle">¿Qué es .NET Framework?
@@ -76,9 +90,18 @@
                     </li>
                 </ul>
             </article>
+
+            <figure>
+                <img src="https://dotnet.microsoft.com/static/images/illustrations/swimlane-community-documentation.svg" />
+            </figure>
         </section>
 
         <section class="section">
+
+            <figure>
+                <img src="https://dotnet.microsoft.com/static/images/illustrations/swimlane-security.svg" />
+            </figure>
+
             <article class="article concepto">
                 <h3 class="subtitle">.NET Framework para usuarios
                 </h3>
@@ -88,9 +111,7 @@
                          Framework o de su funcionamiento. En general, .NET Framework
                          es completamente transparente para los usuarios.
                 </p>
-            </article>
 
-            <article class="article concepto">
                 <h3 class="subtitle">.NET Framework para desarrolladores
                 </h3>
                 <p class="content">
@@ -102,6 +123,7 @@
                          con el que se desarrollaron.
                 </p>
             </article>
+            
         </section>
     </div>
 </div>

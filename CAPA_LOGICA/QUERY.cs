@@ -14,14 +14,14 @@ namespace CAPA_LOGICA
     {
         readonly SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
 
-        public Boolean IniciarSesion(long usuario, string clave)
+        public Boolean IniciarSesion(string emaul, string password)
         {
             try
             {
                 SqlCommand cmd = new SqlCommand("Validar", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add(new SqlParameter("@usuario", usuario));
-                cmd.Parameters.Add(new SqlParameter("@clave", clave));
+                cmd.Parameters.Add(new SqlParameter("@email", emaul));
+                cmd.Parameters.Add(new SqlParameter("@password", password));
                 con.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
 
@@ -40,8 +40,8 @@ namespace CAPA_LOGICA
             }
             catch(SqlException e)
             {
-                
-                Console.WriteLine(e.Message);
+
+                MessageBox.Show(e.Message);
                 return false;
             }
             finally

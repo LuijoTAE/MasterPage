@@ -1,0 +1,13 @@
+﻿body {
+}
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+input {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 0 1px #2F4F4F; 
+}

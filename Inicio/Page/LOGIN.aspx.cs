@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using CAPA_LOGICA;
 using System.Configuration;
 using System.Web.Services.Description;
+using System.Windows.Forms;
 
 namespace Inicio.Page
 {
@@ -25,16 +26,16 @@ namespace Inicio.Page
        
         protected void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            long user = long.Parse(this.txtNameUser.Text);
-            string pasword = this.txtPasword.Text;
+            string email = this.txtEmail.Text;
+            string pasword = this.txtPassword.Value;
 
-            if(query.IniciarSesion(user, pasword))
+            if(query.IniciarSesion(email, pasword))
             {
                 
                 Response.Redirect("https://localhost:44318/Page/ASP", true);
             }else
             {
-                Console.WriteLine("no sepudo");
+                MessageBox.Show("algo salió mal");
             }
         }
     }
