@@ -7,13 +7,14 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Data;
 using System.Windows.Forms;
+using Microsoft.Azure.Management.Sql.Models;
 
 namespace CAPA_LOGICA
 {
     public class QUERY
     {
         readonly SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
-
+        SegurosBDEntities segurosBD = new SegurosBDEntities();
         public Boolean IniciarSesion(string emaul, string password)
         {
             try
@@ -50,9 +51,128 @@ namespace CAPA_LOGICA
             }           
         }
 
-        public void Message()
+        public Boolean UpdateUser(string name, string lastname, string password, string email)
         {
-            MessageBox.Show("si está funcionando");
+            try
+            {
+                if (!email.Equals(""))
+                {
+                    SqlCommand cmd = new SqlCommand("updateUSER", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add(new SqlParameter("@name", name));
+                    cmd.Parameters.Add(new SqlParameter("@lastname", lastname));
+                    cmd.Parameters.Add(new SqlParameter("@password", password));
+                    cmd.Parameters.Add(new SqlParameter("@email", email));
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+                
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.ToString());
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
         }
+
+        public Boolean DeleteUser(string email, string password)
+        {
+            try
+            {
+                if (!email.Equals(""))
+                {
+                    SqlCommand cmd = new SqlCommand("deleteUSER", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add(new SqlParameter("@password", password));
+                    cmd.Parameters.Add(new SqlParameter("@email", email));
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.ToString());
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public DataTable LoadUser()
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("getUSer", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                con.Open();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                con.Close();
+                return dt;
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.Message);
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public Boolean SaveUser(string name, string lastname, string password, string email)
+        {
+            try
+            {
+                if (!email.Equals(""))
+                {
+                    SqlCommand cmd = new SqlCommand("saveUSER", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add(new SqlParameter("@name", name));
+                    cmd.Parameters.Add(new SqlParameter("@lastname", lastname));
+                    cmd.Parameters.Add(new SqlParameter("@password", password));
+                    cmd.Parameters.Add(new SqlParameter("@email", email));
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.ToString());
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+
+
     }
 }

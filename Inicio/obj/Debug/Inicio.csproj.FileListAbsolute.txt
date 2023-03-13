@@ -75,3 +75,8 @@ D:\C#\Inicio\Inicio\obj\Debug\Inicio.dll
 D:\C#\Inicio\Inicio\obj\Debug\Inicio.pdb
 D:\C#\Inicio\Inicio\bin\CAPA_LOGICA.dll
 D:\C#\Inicio\Inicio\bin\CAPA_LOGICA.pdb
+D:\C#\Inicio\Inicio\bin\EntityFramework.dll
+D:\C#\Inicio\Inicio\bin\CAPA_LOGICA.dll.config
+D:\C#\Inicio\Inicio\bin\EntityFramework.xml
+D:\C#\Inicio\Inicio\bin\EntityFramework.SqlServer.dll
+D:\C#\Inicio\Inicio\bin\EntityFramework.SqlServer.xml

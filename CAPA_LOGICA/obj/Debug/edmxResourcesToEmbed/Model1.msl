@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SegurosBDModelStoreContainer" CdmEntityContainer="SegurosBDEntities">
+    <FunctionImportMapping FunctionImportName="getUSer" FunctionName="SegurosBDModel.Store.getUSer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SegurosBDModel.getUSer_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="saveUSER" FunctionName="SegurosBDModel.Store.saveUSER" />
+    <FunctionImportMapping FunctionImportName="updateUSER" FunctionName="SegurosBDModel.Store.updateUSER" />
+    <FunctionImportMapping FunctionImportName="Validar" FunctionName="SegurosBDModel.Store.Validar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SegurosBDModel.Validar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -26,7 +26,7 @@ namespace Inicio.Page
        
         protected void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            string email = this.txtEmail.Text;
+            string email = this.inpEmail.Value;
             string pasword = this.txtPassword.Value;
 
             if(query.IniciarSesion(email, pasword))

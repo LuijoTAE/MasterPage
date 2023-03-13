@@ -13,8 +13,24 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <link rel="stylesheet" href="../Css/LoginStyle.css" />
+    <link rel="stylesheet" href="../Css/Mcss.css"/>
 </head>
 <body>
+
+    <header>
+        <!-- Navbar -->
+        <nav class="nav_">
+            
+            <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/" target="_blank" class="link_ link_-S" >Sofia Plus</a>
+            <a href="https://sena.territorio.la/index.php?login=true" target="_blank" class="link_ link_-T">Territorium</a>
+            <a href="../Page/REGISTRO.aspx" class="link_ link_-R">Registrar ahora</a>
+            <a href="../Page/LOGIN.aspx" class="link_ link_-I">Iniciar Sesión</a>
+        </nav>
+        <!-- Navbar -->
+    </header>
+    
+    <br />
+
     <section class="vh-100">
         <div class="container py-5 h-100">
             <div class="row d-flex align-items-center justify-content-center h-100">
@@ -25,14 +41,14 @@
                     <form runat="server">
                         <!-- Email input -->
                         <div class="form-outline mb-4">
-                            <asp:TextBox id="txtEmail" type="email" class="form-control form-control-lg" runat="server" ></asp:TextBox>
-                            <label class="form-label" for="form1Example13">Email address</label>
+                            <input id="inpEmail" type="email" class="form-control form-control-lg" style="box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 0 1px #2F4F4F; " runat="server"/>
+                            <label class="form-label" for="form1Example13">Dirección de correo electrónico</label>
                         </div>
 
                         <!-- Password input -->
                         <div class="form-outline mb-4">
-                            <input id="txtPassword" type="password" class="form-control form-control-lg" runat="server"/>
-                            <label class="form-label" for="form1Example23">Password</label>
+                            <input id="txtPassword" type="password" class="form-control form-control-lg" style="box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 0 1px #2F4F4F; " runat="server"/>
+                            <label class="form-label" for="form1Example23">Contraseña</label>
                         </div>
 
                         <!-- Submit button -->
@@ -42,5 +58,14 @@
             </div>
         </div>
     </section>
+
+     <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+                <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 </body>
 </html>

@@ -33,3 +33,6 @@ D:\C#\Inicio\CAPA_LOGICA\obj\Debug\CAPA_LOGICA.csproj.CoreCompileInputs.cache
 D:\C#\Inicio\CAPA_LOGICA\obj\Debug\CAPA_LOGICA.csproj.CopyComplete
 D:\C#\Inicio\CAPA_LOGICA\obj\Debug\CAPA_LOGICA.dll
 D:\C#\Inicio\CAPA_LOGICA\obj\Debug\CAPA_LOGICA.pdb
+D:\C#\Inicio\CAPA_LOGICA\bin\Debug\CAPA_LOGICA.dll.config
+D:\C#\Inicio\CAPA_LOGICA\bin\Debug\EntityFramework.dll
+D:\C#\Inicio\CAPA_LOGICA\bin\Debug\EntityFramework.xml
